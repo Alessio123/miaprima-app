@@ -1,0 +1,50 @@
+
+<!-- BINDINGS
+<app-binding></app-binding> 
+-------------------------------------------------------- -->
+
+<!-- DIRETTIVE
+<app-direttive></app-direttive> 
+------------------------------------------------------------->
+
+
+<!-- PASSAGGIO DI DATI TRA PARENT E CHILD(si usa property binding), PASSAGGIO DI DATI TRA CHILD A PARENT(event binding)
+
+<app-child (mandaDatiEvento)="riceviDatiEvento($event)" [data]="persone"></app-child>
+<button (click)="onClick1()">Cambia le persone</button> 
+-------------------------------------------------------------------------------------------------------------------------- -->
+
+
+<!-- UTILIZZARE TEMPLATES PER PRENDERE ELEMENTI DALLA PAGINA SENZA LEGARLI A VARIABILI(ES.DATI IN UN FORM)
+<app-templates></app-templates> 
+------------------------------------------------------------------------------------------------------------ -->
+
+
+<!-- CREAZIONE DI UNA DIRETTIVA CHE EVIDENZIA IL TESTO CON UN COLORE DEFAULT SCELTO DIRETTAMENTO EL TAG OPPURE SELEZIONATO DAI RADIO BUTTON
+
+<h2>Scegli il colore dell'evidenziatore</h2>
+<div>
+    <input type="radio" name="coloreEvidenziatore"(click)="cambiaColoreEvidenziatore('red')">Rosso
+    <input type="radio" name="coloreEvidenziatore"(click)="cambiaColoreEvidenziatore('pink')">Rosa
+    <input type="radio" name="coloreEvidenziatore"(click)="cambiaColoreEvidenziatore('purple')">Viola
+</div>
+<p [appHighlight]="colore" defaultColor="blue">CIAO SONO UN PARAGRAFO </p>
+<p [appHighlight]="colore" defaultColor="green">CIAO SONO UN PARAGRAFO </p>
+------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- FUNZIONI PIPE
+<app-pipe></app-pipe>
+----------------------------------------------------- -->
+
+<!-- ROUTING TRA PAGINE FITTIZIE, VIENE INSERITO IL TAG IN ROUTER OUTLET IN BASE AL PATH SEGNATO IN APP-ROUTING,IN ABOUT E' SEMPLICE MENTRE IN CONTACT E' STATO SVILUPPATO DI PIU',<br>
+REDIRECT E CONTROLLO SUGLI ACCESI SU UNA PAGINA <br>
+<a routerLink="" style="margin-right: 10px;">HOME</a>
+<a routerLink="about"style="margin-right: 10px;">ABOUT</a>
+<a routerLink="contact" style="margin-right: 10px;">CONTACT</a><br>
+------------------------------------------------------------------------------ <br>
+<router-outlet>
+</router-outlet> 
+------------------------------------------------------------------------------ -->
+
+<!-- <app-template-driven-form></app-template-driven-form> -->
+

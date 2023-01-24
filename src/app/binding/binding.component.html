@@ -1,0 +1,31 @@
+<h1>string interpolation</h1>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{cani[0].nome}}</mat-card-title>
+    <mat-card-subtitle>{{cani[0].razza}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{cani[0].descrizione}}</p>
+  </mat-card-content>
+
+</mat-card><br><p>---------------------------------------------------------------------------------------------------------------</p><br>
+<h1>property binding</h1>
+
+<button mat-raised-button color="primary" [disabled]="isDisabled">Primary</button>
+<mat-card class="example-card">
+  <img mat-card-image [src]="immagine" alt="Photo of a Shiba Inu">
+</mat-card>
+
+
+
+<br><p>---------------------------------------------------------------------------------------------------------------</p><br>
+<h1>2 way binding</h1>
+<button mat-raised-button color="primary" (click)="onClick($event)">Primary</button>
+<mat-form-field class="example-full-width">
+  <mat-label>Favorite food</mat-label>
+  <input matInput placeholder="Ex. Pizza" [(ngModel)]="title">
+</mat-form-field>
+<p>{{title}}</p>
+
+
+

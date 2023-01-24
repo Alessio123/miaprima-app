@@ -1,0 +1,6 @@
+<!-- Questo è il child che prende i dati dal parent APP.TS -->
+<div *ngFor="let persona of data;">
+    <p>{{persona.nome}}-{{persona.cognome}}-{{persona.isOnline}}</p>
+</div>
+
+<button (click)="mandaDati()">MANDA DATI AL PARENTE</button>

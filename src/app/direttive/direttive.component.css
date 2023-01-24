@@ -1,0 +1,32 @@
+.cerchioOnline, .cerchioOffline,.pallino {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  text-align: center;
+}
+.cerchioOffline {
+  background-color: red;
+  color: yellow ;
+}
+.cerchioOnline {
+  background-color: green;
+  color: white;
+}
+.affianco {
+  margin: 0;
+  display: inline;
+  float: left;
+}
+.pallino{
+    background-color: blue;
+    margin-right: 10px;
+}
+li{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+li > p{
+    margin-bottom: 0;
+}
